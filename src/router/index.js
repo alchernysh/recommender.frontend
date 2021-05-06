@@ -4,6 +4,7 @@ import Home from '../views/Home';
 import login from '../views/Login';
 import register from '../views/Register';
 import logout from '../views/Logout';
+import Settings from '../views/Settings';
 
 Vue.use(Router);
 
@@ -36,6 +37,14 @@ export default new Router({
       path: '/logout',
       name: 'logout',
       component: logout,
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: Settings,
       meta: {
         requiresAuth: true,
       },

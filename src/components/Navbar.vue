@@ -13,6 +13,9 @@
     <li>
       <router-link :to = "{ name:'home' }" exact>HOME</router-link>
     </li>
+    <li>
+      <router-link :to = "{ name:'settings' }" exact>Settings</router-link>
+    </li>
   </ul>
 </div>
 </template>

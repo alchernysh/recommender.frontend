@@ -2,11 +2,15 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import IdleVue from 'idle-vue';
+import BootstrapVue from 'bootstrap-vue';
 import App from './App';
 import router from './router';
 import store from './store';
 
+
 const eventsHub = new Vue();
+
+Vue.use(BootstrapVue);
 
 Vue.use(IdleVue, {
   eventEmitter: eventsHub,
