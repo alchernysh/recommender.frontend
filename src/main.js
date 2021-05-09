@@ -2,11 +2,16 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import IdleVue from 'idle-vue';
-import BootstrapVue from 'bootstrap-vue';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+// eslint-disable-next-line
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import App from './App';
 import router from './router';
 import store from './store';
 
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 
 const eventsHub = new Vue();
 

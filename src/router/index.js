@@ -5,6 +5,7 @@ import login from '../views/Login';
 import register from '../views/Register';
 import logout from '../views/Logout';
 import Settings from '../views/Settings';
+import Articles from '../views/Articles';
 
 Vue.use(Router);
 
@@ -45,6 +46,14 @@ export default new Router({
       path: '/settings',
       name: 'settings',
       component: Settings,
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/articles',
+      name: 'articles',
+      component: Articles,
       meta: {
         requiresAuth: true,
       },

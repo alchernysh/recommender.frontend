@@ -16,6 +16,9 @@
     <li>
       <router-link :to = "{ name:'settings' }" exact>Settings</router-link>
     </li>
+    <li>
+      <router-link :to = "{ name:'articles' }" exact>Articles</router-link>
+    </li>
   </ul>
 </div>
 </template>
@@ -34,7 +37,6 @@ export default {
 .nav-bar {
     background-color: #2f3033;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
