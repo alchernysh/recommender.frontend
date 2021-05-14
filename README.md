@@ -1,21 +1,28 @@
-# recommender.frontend.service
+# Recommender training
 
-> A Vue.js project
+This repo is part of recommender project. It contains code for frontend service.
 
-## Build Setup
+## Requirements
 
-``` bash
-# install dependencies
+- Ubuntu >= 18.04
+- npm >= 7.7.6
+
+## Installation
+
+To install dependencies run command:
+
+```shell
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Usage
+
+To start frontend server for development run command:
+``` bash
+npm run dev
+```
+
+To build frontend for production run command:
+``` bash
+npm run build
+```
